@@ -1,0 +1,16 @@
+{
+  "tfidf_logreg": {
+    "val_macro_f1": 0.8817,
+    "train_seconds": 15.8
+  },
+  "tfidf_linearsvc": {
+    "val_macro_f1": 0.8876,
+    "train_seconds": 3.0
+  },
+  "best": {
+    "model": "tfidf_linearsvc",
+    "test_accuracy": 0.9044,
+    "test_macro_f1": 0.9046,
+    "ms_per_message_cpu": 0.083
+  }
+}

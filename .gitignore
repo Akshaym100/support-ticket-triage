@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/
+outputs/
+.ipynb_checkpoints/
+
+# Models: keep only the small LoRA adapter (4 MB) so the demo works after cloning.
+# baseline.joblib is rebuilt in seconds by `python -m support_ticket_triage.baseline`.
+models/*
+!models/lora_adapter/

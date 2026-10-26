@@ -1,0 +1,20 @@
+{
+  "distilbert_full": {
+    "trainable_params": 67012685,
+    "total_params": 67012685,
+    "trainable_pct": 100.0,
+    "train_minutes": 4.81,
+    "test_accuracy": 0.9194,
+    "test_macro_f1": 0.9193,
+    "ms_per_message_gpu": 0.981
+  },
+  "distilbert_lora_r16": {
+    "trainable_params": 944717,
+    "total_params": 67957402,
+    "trainable_pct": 1.39,
+    "train_minutes": 7.49,
+    "test_accuracy": 0.9295,
+    "test_macro_f1": 0.9293,
+    "ms_per_message_gpu": 0.996
+  }
+}

@@ -1,0 +1,33 @@
+[project]
+name = "support-ticket-triage"
+version = "0.1.0"
+description = "Customer support intent classification: TF-IDF baseline vs DistilBERT full fine-tuning vs LoRA"
+readme = "README.md"
+authors = [
+    { name = "Krtiin Sharma", email = "krtiinsharma2415@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=5.1.0",
+    "evaluate>=0.4.6",
+    "fastapi>=0.162.0",
+    "ipykernel>=7.4.0",
+    "joblib>=1.6.0",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.0",
+    "peft>=0.21.2",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "torch>=2.14.1",
+    "transformers>=5.20.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+support-ticket-triage = "support_ticket_triage:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
